@@ -2,7 +2,9 @@
 
 yum -y update
 
-curl -sL https://rpm.nodesource.com/setup_15.x | bash -
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+. ~/.nvm/nvm.sh
 
 yum -y install nodejs
 
