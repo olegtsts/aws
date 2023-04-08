@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowS3Access",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::539572237975:role/EC2S3DynamoDBFullAccess"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::employee-photo-bucket-ot-001",
+                "arn:aws:s3:::employee-photo-bucket-ot-001/*"
+            ]
+        }
+    ]
+}
